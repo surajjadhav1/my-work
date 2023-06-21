@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+
+
+
+
+
+
+
+        /* Style the tab2 */
+        .tab2 {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab2 button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab2 button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab2 button.active {
+            background-color: #ccc;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        .tabcontent2 {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        .tabcontent3 {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        /* Style the close button */
+        .topright {
+            float: right;
+            cursor: pointer;
+            font-size: 28px;
+        }
+
+        .topright:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div">
+
+        <div class="tab2">
+            <button class="tablinks active" onclick="openCity(event, 'oneway')" id="defaultOpen">One way</button>
+            <button class="tablinks" onclick="openCity(event, 'return')">Return</button>
+        </div>
+
+        <div id="oneway" class="tabcontent" style="display: block;">
+            <div class="div">
+                <div class="tab">
+                    <button class="tablinks2" onclick="openCity2(event, 'one')" id="defaultOpen2">Seat 1</button>
+                    <button class="tablinks2" onclick="openCity2(event, 'two')">Meal 1</button>
+                </div>
+                <div id="one" class="tabcontent2" style="display: block;">
+                    <h3>Seat 1</h3>
+                </div>
+                <div id="two" class="tabcontent2">
+                    <h3>meal 1 </h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="return" class="tabcontent">
+            <div class="div">
+                <div class="tab">
+                    <button class="tablinks3" onclick="openCity3(event, 'three')" id="defaultOpen3">Return seat 2</button>
+                    <button class="tablinks3" onclick="openCity3(event, 'four')">Return Meal 2</button>
+                </div>
+                <div id="three" class="tabcontent3" style="display: block;">
+                    <h3>Return seat 2</h3>
+                </div>
+                <div id="four" class="tabcontent3">
+                    <h3> Return Meal 2</h3>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    <script>
+        function openCity2(evt, cityName) {
+            var i, tabcontent2, tablinks2;
+            tabcontent2 = document.getElementsByClassName("tabcontent2");
+            for (i = 0; i < tabcontent2.length; i++) {
+                tabcontent2[i].style.display = "none";
+            }
+            tablinks2 = document.getElementsByClassName("tablinks2");
+            for (i = 0; i < tablinks2.length; i++) {
+                tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen2").click();
+    </script>
+
+    <script>
+        function openCity3(evt, cityName) {
+            var i, tabcontent3, tablinks3;
+            tabcontent3 = document.getElementsByClassName("tabcontent3");
+            for (i = 0; i < tabcontent3.length; i++) {
+                tabcontent3[i].style.display = "none";
+            }
+            tablinks3 = document.getElementsByClassName("tablinks3");
+            for (i = 0; i < tablinks3.length; i++) {
+                tablinks3[i].className = tablinks3[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen3").click();
+    </script>
+</body>
+
+</html>

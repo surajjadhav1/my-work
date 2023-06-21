@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="jquery/jquery-3.7.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row m10 ">
+            <table class="w-100 sectioned">
+                <thead>
+                    <tr class="hight30 bg-clr1 dis-table brd3">
+                        <th class="padx5 w-12">Airline</th>
+                        <th class="padx5 w-19">Depart</th>
+                        <th class="padx5 w-4">Stop</th>
+                        <th class="padx5 w-7">Duration</th>
+                        <th class="padx5 w-17">Connection City</th>
+                        <th class="padx5 w-14">Arrive</th>
+                        <th class="padx5">Price (1 adult)</th>
+                        <th class="padx5">Travel Class</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+
+                        <!-- Dublicated Data Start-->
+                        <table class="mb-10 w-100">
+                            <tbody>
+                                <tr>
+
+                                    <!-- main Data 1 Start -->
+                                    <table class="w-100 ">
+                                        <tbody>
+                                            <tr class=" para1 brd-dis" id="btn-brd">
+                                                <td class="pad10 w-12">
+                                                    <img src="image/indigo.gif" alt="">
+                                                    <p>Indigo</p>
+                                                </td>
+
+                                                <td colspan="5" class="pad10 w-62">
+                                                    <div class="">
+                                                        <div class="rightdt pad2">
+                                                            <b>Mumbai (BOM)</b>
+                                                        </div>
+                                                        <div class="leftdata pad2">
+                                                            <b>Dubai (XNB)</b>
+                                                        </div>
+
+                                                        <div class="pad6">
+                                                            <ul class="timeline">
+                                                                <li class="active-tl one"></li>
+                                                                <li class="active-tl"></li>
+                                                                <li class="active-tl two"></li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="timeline d-flex pad2">
+                                                            <div class="leftside w-33">
+                                                                <input type="radio" name="time" id="" value="21:23">
+                                                                <b>21:23</b>
+                                                                <span>Mon,
+                                                                    Jun
+                                                                    19</span>
+                                                            </div>
+                                                            <div class="centerside w-33 text-center">
+                                                                <span>5 hr 40 min ( 1 stops )</span>
+                                                            </div>
+                                                            <div class="rightside w-33">
+                                                                <span class="rightdt">Tue, Jun 20 <b>22:20</b></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="timeline d-flex pad2">
+                                                            <div class="leftside w-33">
+                                                                <input type="radio" name="time" id="" value="21:23">
+                                                                <b>21:23</b>
+                                                                <span>Mon,
+                                                                    Jun
+                                                                    19</span>
+                                                            </div>
+                                                            <div class="centerside w-33 text-center">
+                                                                <span>5 hr 40 min ( 1 stops )</span>
+                                                            </div>
+                                                            <div class="rightside w-33">
+                                                                <span class="rightdt">Tue, Jun 20 <b>20:57</b></span>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </td>
+
+                                                <td colspan="2" class="pad10 w-27">
+                                                    <div class="leftdt">
+                                                        <button class="btn-b1">
+                                                            <span class="fnt-new"> &#8377; 13,345</span><br>
+                                                            <b class="btn-clr1">Select</b>
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="rightdt">
+                                                        <p>Web Fare</p>
+                                                        <p id="showBtn" class="details-syl">Details </p>
+                                                        <p class="details-syl">Fare Rules</p>
+                                                        <p class="fnt-red">Economy</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+
+                                                <!-- Details Data Start -->
+                                                <table class="w-100 brd2 " id="myTable">
+                                                    <tbody>
+                                                        <tr class="dis-table bgcolor2">
+                                                            <td class=" w-8"></td>
+
+                                                            <td colspan="7" class=" w-62">
+                                                                <div class="pos-rel">
+
+                                                                    <div class="leftdata pad2 brd-dotted pt-10">
+                                                                        <b class="txt-blue">Mumbai (BOM) to Dubai (XNB)
+                                                                            - Tue, Jun
+                                                                            20</b>
+                                                                    </div>
+
+                                                                    <div id="hideBtn" class="close_btn">
+                                                                    </div>
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+
+                                                        <tr class=" para1 dis-table bgcolor2">
+                                                            <td class="pad10 w-8">
+                                                                <img src="image/indigo.gif" alt="">
+                                                            </td>
+
+                                                            <td colspan="7" class="pb-10 w-62">
+                                                                <div class="">
+
+                                                                    <table class="w-100">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <div class="leftdata pad2">
+                                                                                    <b>Chhatrapati Shivaji Intl (BOM) to
+                                                                                        Dhabi Intl
+                                                                                        Arpt (AUH) - Tue, Jun 20</b>
+                                                                                </div>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <p>Air Vistara UK 201</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>Dep: 16:25</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>Arr: 18:15</p>
+                                                                                    <p>Tue, Jun 20</p>
+                                                                                    <b>Total Trip Time</b>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>3 hr 20 min</p>
+                                                                                    <b>3 hr 20 min</b>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>Airbus A321</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>Economy (V)</p>
+                                                                                </td>
+
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class=" para1 dis-table bgcolor2">
+                                                            <td class="pad10 w-8">
+                                                                <img src="image/indigo.gif" alt="">
+                                                            </td>
+
+                                                            <td colspan="7" class="pb-10 w-62">
+                                                                <div class="">
+
+                                                                    <table class="w-100">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <div class="leftdata pad2">
+                                                                                    <b>Chhatrapati Shivaji Intl (BOM) to
+                                                                                        Dhabi Intl
+                                                                                        Arpt (AUH) - Tue, Jun 20</b>
+                                                                                </div>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <p>Air Vistara UK 201</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>Dep: 16:25</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>Arr: 18:15</p>
+                                                                                    <p>Tue, Jun 20</p>
+                                                                                    <b>Total Trip Time</b>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>3 hr 20 min</p>
+                                                                                    <b>3 hr 20 min</b>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>Airbus A321</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>Economy (V)</p>
+                                                                                </td>
+
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!-- Details Data End -->
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- main Data Start -->
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- Dublicated Data End-->
+
+                        <!-- Dublicated Data Start-->
+                        <table class="mb-10 w-100">
+                            <tbody>
+                                <tr>
+
+                                    <!-- main Data Start -->
+                                    <table class="w-100 ">
+                                        <tbody>
+                                            <tr class=" para1 brd-dis" id="btn-brd1">
+                                                <td class="pad10 w-12">
+                                                    <img src="image/indigo.gif" alt="">
+                                                    <p>Indigo</p>
+                                                </td>
+
+                                                <td colspan="5" class="pad10 w-62">
+                                                    <div class="">
+                                                        <div class="rightdt pad2">
+                                                            <b>Mumbai (BOM)</b>
+                                                        </div>
+                                                        <div class="leftdata pad2">
+                                                            <b>Dubai (XNB)</b>
+                                                        </div>
+
+                                                        <div class="pad6">
+                                                            <ul class="timeline">
+                                                                <li class="active-tl one"></li>
+                                                                <li class="active-tl"></li>
+                                                                <li class="active-tl two"></li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="timeline d-flex pad2">
+                                                            <div class="leftside w-33">
+                                                                <input type="radio" name="time" id="" value="21:23">
+                                                                <b>21:23</b>
+                                                                <span>Mon,
+                                                                    Jun
+                                                                    19</span>
+                                                            </div>
+                                                            <div class="centerside w-33 text-center">
+                                                                <span>5 hr 40 min ( 1 stops )</span>
+                                                            </div>
+                                                            <div class="rightside w-33">
+                                                                <span class="rightdt">Tue, Jun 20 <b>22:20</b></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="timeline d-flex pad2">
+                                                            <div class="leftside w-33">
+                                                                <input type="radio" name="time" id="" value="21:23">
+                                                                <b>21:23</b>
+                                                                <span>Mon,
+                                                                    Jun
+                                                                    19</span>
+                                                            </div>
+                                                            <div class="centerside w-33 text-center">
+                                                                <span>5 hr 40 min ( 1 stops )</span>
+                                                            </div>
+                                                            <div class="rightside w-33">
+                                                                <span class="rightdt">Tue, Jun 20 <b>20:57</b></span>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </td>
+
+                                                <td colspan="2" class="pad10 w-27">
+                                                    <div class="leftdt">
+                                                        <button class="btn-b1">
+                                                            <span class="fnt-new"> &#8377; 13,345</span><br>
+                                                            <b class="btn-clr1">Select</b>
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="rightdt">
+                                                        <p>Web Fare</p>
+                                                        <p id="showBtn1" class="details-syl">Details </p>
+                                                        <p class="details-syl">Fare Rules</p>
+                                                        <p class="fnt-red">Economy</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+
+                                                <!-- Details Data Start -->
+                                                <table class="w-100 brd2 " id="myTable1">
+                                                    <tbody>
+                                                        <tr class="dis-table bgcolor2">
+                                                            <td class=" w-8"></td>
+
+                                                            <td colspan="7" class=" w-62">
+                                                                <div class="pos-rel">
+
+                                                                    <div class="leftdata pad2 brd-dotted pt-10">
+                                                                        <b class="txt-blue">Mumbai (BOM) to Dubai (XNB)
+                                                                            - Tue, Jun
+                                                                            20</b>
+                                                                    </div>
+
+                                                                    <div id="hideBtn1" class="close_btn">
+                                                                    </div>
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+
+                                                        <tr class=" para1 dis-table bgcolor2">
+                                                            <td class="pad10 w-8">
+                                                                <img src="image/indigo.gif" alt="">
+                                                            </td>
+
+                                                            <td colspan="7" class="pb-10 w-62">
+                                                                <div class="">
+
+                                                                    <table class="w-100">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <div class="leftdata pad2">
+                                                                                    <b>Chhatrapati Shivaji Intl (BOM) to
+                                                                                        Dhabi Intl
+                                                                                        Arpt (AUH) - Tue, Jun 20</b>
+                                                                                </div>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <p>Air Vistara UK 201</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>Dep: 16:25</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>Arr: 18:15</p>
+                                                                                    <p>Tue, Jun 20</p>
+                                                                                    <b>Total Trip Time</b>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>3 hr 20 min</p>
+                                                                                    <b>3 hr 20 min</b>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>Airbus A321</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>Economy (V)</p>
+                                                                                </td>
+
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class=" para1 dis-table bgcolor2">
+                                                            <td class="pad10 w-8">
+                                                                <img src="image/indigo.gif" alt="">
+                                                            </td>
+
+                                                            <td colspan="7" class="pb-10 w-62">
+                                                                <div class="">
+
+                                                                    <table class="w-100">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <div class="leftdata pad2">
+                                                                                    <b>Chhatrapati Shivaji Intl (BOM) to
+                                                                                        Dhabi Intl
+                                                                                        Arpt (AUH) - Tue, Jun 20</b>
+                                                                                </div>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <p>Air Vistara UK 201</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>Dep: 16:25</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>Arr: 18:15</p>
+                                                                                    <p>Tue, Jun 20</p>
+                                                                                    <b>Total Trip Time</b>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>3 hr 20 min</p>
+                                                                                    <b>3 hr 20 min</b>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>Airbus A321</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p>Economy (V)</p>
+                                                                                </td>
+
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!-- Details Data End -->
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- main Data Start -->
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- Dublicated Data End-->
+
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <script src="jquery/myjquery.js"></script>
+
+</body>
+
+</html>

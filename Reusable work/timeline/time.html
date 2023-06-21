@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+  .timeline {
+    position: relative;
+}
+
+.timeline li {
+    list-style: none;
+    float: left;
+    width: 33.3333%;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.timeline li:before {
+    counter-increment: test;
+    content: counter(test);
+    width: 5px;
+    height: 5px;
+    border: 3px solid #6d6d6d;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    background: #fff;
+    color: #000;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+}
+
+.timeline li.one::before {
+    counter-increment: test;
+    content: counter(test);
+    width: 5px;
+    height: 5px;
+    border: 3px solid #a9a9a9;
+    border-radius: 1px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    background: #fff;
+    color: #000;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+}
+
+.timeline li.two::before {
+    counter-increment: test;
+    content: counter(test);
+    width: 5px;
+    height: 5px;
+    border: 3px solid #a9a9a9;
+    border-radius: 1px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    background: #fff;
+    color: #000;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+}
+
+
+.timeline li:after {
+    content: "";
+    position: absolute;
+    width: 196%;
+    height: 2px;
+    background-color: grey;
+    top: 5px;
+    left: -98%;
+    z-index: -1001;
+    transition: all ease-in-out .3s;
+}
+
+
+
+.timeline li:first-child:after {
+    content: none;
+}
+
+
+
+.timeline li.active-tl:before {
+    background: #a9a9a9;
+    color: #4caf5000;
+}
+
+.timeline li.active-tl.one:before {
+    left: 30px;
+    background: #a9a9a9;
+    color: #4caf5000;
+    position: relative;
+    top: 1px;
+    left: -245px;
+}
+.timeline li.active-tl.two:before {
+    left: 30px;
+    background: #a9a9a9;
+    color: #4caf5000;
+    position: relative;
+    top: 1px;
+    left: 245px;
+}
+
+.timeline li.active-tl+li:after {
+    background: #6d6d6d;
+}
+    </style>
+
+</head>
+
+<body>
+
+    <ul class="timeline">
+        <li class="active-tl one"></li>
+        <li class="active-tl"></li>
+        <li class="active-tl two"></li>
+    </ul>
+
+
+</html>

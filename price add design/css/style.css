@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+.bodyBackground {
+    height: auto;
+
+    -webkit-box-shadow: 12px 10px 38px 6px rgba(189, 189, 189, 1);
+    -moz-box-shadow: 12px 10px 38px 6px rgba(189, 189, 189, 1);
+    box-shadow: 12px 10px 38px 6px rgba(189, 189, 189, 1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.flightTable {
+    /* padding: 20px; */
+    margin-left: 30px;
+}
+
+.flightDetails {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-right: 2%;
+}
+
+.cancelPolicy {
+    background: #11998e;
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+    background: linear-gradient(to right, #38ef7d, #11998e);
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    width: 15%;
+    border-radius: 6px;
+    /* font-size: 13px; */
+}
+
+.flightDay {
+    font-weight: 400;
+    background: #f8c291;
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    /* font-size: 13px; */
+    padding: 4px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+
+}
+
+.flightTime {
+
+    margin-left: 12px;
+    /* font-size: 14px; */
+}
+
+.viewFare {
+    text-decoration: none;
+    float: right;
+    color: lightseagreen;
+}
+
+.flightLogo {
+    width: 3%;
+    top: 10px;
+    position: relative;
+}
+
+.flightClass {
+    color: #11998e;
+}
+
+.routeBackground {
+    background: #a2d0f1;
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    /* margin-left: 22px; */
+}
+.heading-container {
+    margin-left: 22px;
+}
+.title {
+    color: orangered;
+    position: relative;
+    left: 65px;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -25px;
+    border: 3px solid orangered;
+    top: 4px;
+}
+
+.flightDistance {
+    left: 13%;
+    position: relative;
+}
+
+.bagData {
+    width: 104%;
+    display: inline-block;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.checkinData {
+    width: 70%;
+    display: inline-block;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.marginTop {
+    margin-top: 2%;
+}
+
+.cancelHeader {
+    padding: 15px;
+}
+
+.cancelImg {
+    width: 100%
+}
+
+.pad-15 {
+    padding: 15px;
+}
+
+.passengerHeader {
+    padding: 15px;
+}
+
+.travelSection {
+    display: inline-block;
+    width: 96%;
+    /* padding: 10px; */
+    /* margin: 15px; */
+    padding-left: 22px;
+}
+
+.detailsBar {
+    width: 195%;
+    display: inline-block;
+    left: -12px;
+    position: relative;
+    background: #ffbe76;
+    text-align: left;
+    padding: 3%;
+}
+
+.inputText {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-right: 12px;
+    box-sizing: border-box;
+    border: 2px solid lightgray;
+    border-radius: 4px;
+}
+
+.flightTable ul{
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    list-style-type: disc !important;
+  }
+  .flightTable ul::before{
+    content: "";
+    position: absolute;
+    top: 16px;
+    bottom: 13px;
+    left: -1px;
+    border: 1px dotted red;
+  }
+  .flightTable ul li{
+    margin: 0px 15px 0px 15px;
+    padding: 0px 0px;
+    position: relative;
+    z-index: 1;
+    width: 80%;
+  }
+
+
+.marginRightLi {
+    margin-right: 12%;
+}
+
+.rightAligned {
+    left: 12%;
+    position: relative;
+    list-style: none;
+}
+
+.passenger {
+
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #d9e6f8;
+}
+
+
+.m-0 {
+    margin-left: 25px;
+    margin-bottom: 0px;
+    /* margin-top: 22px; */
+    top: 12px;
+    position: relative;
+}
+
+.footerBtn {
+    padding: 16px;
+    text-align: right;
+    margin-right: 4%;
+}
+
+.submitButton {
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+}
+.radioGender {
+    margin-right: 9px;
+}
